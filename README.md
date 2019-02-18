@@ -30,6 +30,9 @@ To solve general issues you can try the following:
 
 If none of these help you, try a Google search...
 
+## Known issues
+
+Some builds of the app tend to crash, we don't know where the issue lies, but just run the app again from Android Studio until you get a stable working version.
 
 ## Data source
 

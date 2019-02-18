@@ -1,0 +1,101 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4{
+
+	margin-top:5px;
+	margin-bottom:8px;
+}
+
+#infoBox {
+    font-size: large;
+    position: absolute;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #BBBBBB;
+    text-align: center;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+
+#infoBox img{
+	height:50px;
+	width:auto;
+}
+
+#otherBooks,#findARlighthouse{
+	position: absolute;
+	padding:0;
+	margin:0;
+	width: 100%;
+	min-width:100%;
+	min-height:100%;
+	display:none;
+}
+
+.subcontent{
+	position: relative;
+	margin: 0 auto;
+	width: 60%;
+	min-height:100%;
+	padding-bottom:65px;
+	padding-top:105px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.subheader{
+	position:fixed;
+	height:85px;
+	width:100%;
+	top:0;
+	left:0;
+	background-color:#FE9900;
+	opacity:0.8;
+	text-align: center;
+}
+
+.subfooter{
+	position:fixed;
+	height:50px;
+	width:100%;
+	bottom:0;
+	left:0;
+	background-color:#FE9900;
+	opacity:0.8;
+	text-align: right;
+	vertical-align: middle;
+	line-height: 50px;  
+}
+
+
+.newbook{
+	box-shadow: 3px 7px 10px #808080;
+	width:100%;
+	margin-bottom:27px;
+	background-color:rgba(119,119,119,0.8);
+	font-weight:bold;
+	color:#AFFF0F;
+	text-align: center;
+	padding-bottom:7px;
+}
+
+#otherBooks img{
+	display:block;
+	margin-bottom:7px;
+	width:100%;
+}
+
+#findARlighthouse img{
+	float:left;
+	margin-right:10px;
+	height:14vh;
+}

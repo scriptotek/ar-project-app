@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Arrays;
@@ -65,6 +66,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void permissionsDenied(@NonNull String[] deniedPermissions) {
                 Toast.makeText(MainActivity.this, getString(R.string.permissions_denied) + Arrays.toString(deniedPermissions), Toast.LENGTH_SHORT).show();
+                TextView tv = (TextView)findViewById(R.id.msg);
+                tv.setText(getString(R.string.permission_error));
             }
 
             @Override

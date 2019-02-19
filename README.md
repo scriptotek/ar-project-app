@@ -8,17 +8,21 @@ To read more about the app, the development process, and the project, go to the 
 
 ## Building the app
 
-1. Download the Wikitude Android SDK with JavaScript API from [https://www.wikitude.com/download-wikitude-sdk-for-android/](https://www.wikitude.com/download-wikitude-sdk-for-android/) (tested with version 8.2.0) and copy the `wikitudesdk.aar` file into the `libs` folder.
+1. Clone the repository or download [a zipped version](https://github.com/scriptotek/ar-project-app/archive/master.zip) and unzip it.
 
-2. Get an SDK key from Wikitude and add it to `src/main/res/values/wikitude_license_key.xml`
+2. The project folder does not include the Wikitude SDK itself. You need to download the Wikitude Android SDK with JavaScript API from [https://www.wikitude.com/download-wikitude-sdk-for-android/](https://www.wikitude.com/download-wikitude-sdk-for-android/) (tested with version 8.2.0). Unzip it and copy the `Library/wikitudesdk.aar` file into the `libs` folder of this project. The rest of the Wikitude SDK package can be safely discarded.
+
+3. Get an SDK key from Wikitude and add it to `src/main/res/values/wikitude_license_key.xml`
    * You can get a free trial licence from Wikitude, see: [https://www.wikitude.com/documentation/latest/android/triallicense.html](https://www.wikitude.com/documentation/latest/android/triallicense.html).
    * There is also a Start-up Licence for companies: [https://www.wikitude.com/product/sdk-startup/](https://www.wikitude.com/product/sdk-startup/).
    * And there is an Educational Licence (the one we used): [https://www.wikitude.com/wikitude-academy/](https://www.wikitude.com/wikitude-academy/).
    * Note that trial licences such as these will include watermarks of various intensity.
    
-3. Open Android Studio, go to File -> New -> Import Project ->  locate the project folder (ar-project-app) and click ok
+4. Open [Android Studio](https://developer.android.com/studio) (we used version 3.3.1), select `File -> New -> Import Project`, locate the project folder (ar-project-app) and click `Ok`.
 
-4. To directly run the app, connnect your android phone with developer mode on, go to menu Run -> Run 'ar-project.app'
+5. To run the app on a physical phone connected with a USB cable, make sure it has [developer mode and USB debugging enabled](https://developer.android.com/studio/debug/dev-options), then in Android Studio select `Run -> Run 'ar-project.app'` and cross your fingers!
+
+Note: If you don't want to install Android Studio, the app can also be built and installed from the command line using Gradle (run `gradlew tasks` to see available tasks).
 
 ## Troubleshooting
 
